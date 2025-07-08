@@ -1,0 +1,119 @@
+
+/* style.css (agregado o actualizado) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #004b73;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-left h1 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.logo-left .blue {
+  color: #a0d8f1;
+}
+
+.logo-right img {
+  height: 50px;
+}
+
+.icon {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #0077aa;
+}
+
+/* Otros estilos (ya existentes o agregados para mejorar visual) */
+main {
+  padding: 20px;
+}
+
+.intro img.main-image,
+.project img,
+.donation-detail img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logos img {
+  height: 60px;
+}
+
+.search-donation {
+  padding: 20px;
+  text-align: center;
+}
+
+input#busqueda {
+  padding: 8px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+button#buscar-btn {
+  padding: 8px 12px;
+  border: none;
+  background-color: #004b73;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button#buscar-btn:hover {
+  background-color: #0077aa;
+}
+
+.hidden {
+  display: none;
+}
+
+.donor-list, .donation-detail {
+  padding: 20px;
+  background: #f0f0f0;
+  margin: 10px;
+  border-radius: 10px;
+}

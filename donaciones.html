@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Donation - Water Is Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-left">
+      <h1><span class="blue">WATER IS LIFE</span> FOR CRAIGHOUSE</h1>
+      <img src="assets/icons/icon-placeholder.png" alt="Icon" class="icon">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Our Project</a>
+      <a href="donations.html">My Donation</a>
+    </nav>
+    <div class="logo-right">
+      <img src="assets/logos/craighouse-logo.png" alt="Craighouse Logo">
+    </div>
+  </header>
+
+  <main>
+    <section class="search-donation">
+      <input type="text" id="busqueda" placeholder="Search by name or course">
+      <button id="buscar-btn">🔍</button>
+      <div id="resultados"></div>
+    </section>
+
+    <section id="detalle-donacion" class="hidden">
+      <div class="donor-list">
+        <h3 id="nombre-curso">Y1-A</h3>
+        <ul>
+          <li>Martín Rojas</li>
+          <li>Matías Contreras</li>
+          <li>Alonso Tapia</li>
+          <li>Antonia Herrera</li>
+          <li>...</li>
+        </ul>
+      </div>
+      <div class="donation-detail">
+        <h3>Familia Diaz Gonzales</h3>
+        <p><em>Petorca - Chile</em></p>
+        <img src="assets/imgs/familia-diaz-placeholder.jpg" alt="Foto familia receptora">
+        <p>Queridos estudiantes y comunidad de Craighouse School:...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/buscar.js"></script>
+</body>
+</html>
