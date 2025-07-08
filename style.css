@@ -1,5 +1,4 @@
-
-/* style.css (agregado o actualizado) */
+/* style.css actualizado para Bootstrap */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -56,7 +55,6 @@ nav a:hover {
   background-color: #0077aa;
 }
 
-/* Otros estilos (ya existentes o agregados para mejorar visual) */
 main {
   padding: 20px;
 }
@@ -116,4 +114,35 @@ button#buscar-btn:hover {
   background: #f0f0f0;
   margin: 10px;
   border-radius: 10px;
+}
+
+/* === Estilos adicionales para integrarse bien con Bootstrap === */
+.card {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.alert {
+  margin-top: 15px;
+}
+
+.input-group > .form-control {
+  max-width: 400px;
+}
+
+.text-muted, .text-danger, .text-warning {
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .input-group > .form-control {
+    width: 100% !important;
+  }
+  .search-donation {
+    padding: 10px;
+  }
 }
