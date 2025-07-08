@@ -1,40 +1,56 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Water Is Life For Craighouse</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
-    <div class="logo-left">
-      <h1><span class="blue">WATER IS LIFE</span> FOR CRAIGHOUSE</h1>
-      <img src="assets/icons/icon-placeholder.png" alt="Icon" class="icon">
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="project.html">Our Project</a>
-      <a href="donations.html">My Donation</a>
-    </nav>
-    <div class="logo-right">
-      <img src="assets/logos/craighouse-logo.png" alt="Craighouse Logo">
-    </div>
-  </header>
 
-  <main>
-    <section class="intro">
+  <!-- ✅ Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/icons/icon-placeholder.png" alt="Icon" width="30" height="30" class="d-inline-block align-text-top me-2">
+        <strong>WATER IS LIFE <span class="text-light">FOR CRAIGHOUSE</span></strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Our Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="donations.html">My Donation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Contenido principal -->
+  <main class="container my-5">
+    <section class="intro text-center">
       <h2>Water Is Life For Craighouse</h2>
       <p><em>By Round Square (ENVIRONMENTALISM)</em></p>
       <p>Craighouse School, in collaboration with the global educational network Round Square, is excited to propose a joint project with the organization <strong>WATERisLIFE</strong>. This initiative aims to raise awareness about the global water crisis and take meaningful action to support communities that lack access to clean and safe drinking water.</p>
       <p>Through this partnership, students from Craighouse and other Round Square schools will work together to design and implement activities that promote education, fundraising, and real-world impact. By combining our values of leadership, service, and international understanding with WATERisLIFE’s mission and expertise, we hope to make a lasting difference in the lives of those affected by water scarcity.</p>
       <p>Together, we believe we can inspire change and contribute to a more sustainable and compassionate world.</p>
-      <img src="assets/imgs/girl-drinking-placeholder.jpg" alt="Girl drinking water from faucet" class="main-image">
-      <div class="logos">
-        <img src="assets/logos/waterislife-placeholder.png" alt="WATERisLIFE logo">
-        <img src="assets/logos/roundsquare-placeholder.png" alt="Round Square logo">
-        <img src="water is life/fotos" alt="Craighouse logo">
-        <img src="assets/logose/environmentalism-placeholder.png" alt="Environmentalism icon">
+
+      <img src="assets/imgs/girl-drinking-placeholder.jpg" alt="Girl drinking water from faucet" class="img-fluid my-4">
+
+      <div class="d-flex justify-content-center flex-wrap gap-4">
+        <img src="assets/logos/waterislife-placeholder.png" alt="WATERisLIFE logo" height="60">
+        <img src="assets/logos/roundsquare-placeholder.png" alt="Round Square logo" height="60">
+        <img src="water is life/fotos" alt="Craighouse logo" height="60">
+        <img src="assets/logose/environmentalism-placeholder.png" alt="Environmentalism icon" height="60">
       </div>
     </section>
   </main>
+
+  <!-- ✅ Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

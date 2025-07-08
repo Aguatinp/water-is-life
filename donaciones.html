@@ -4,51 +4,82 @@
   <meta charset="UTF-8">
   <title>My Donation - Water Is Life</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
-    <div class="logo-left">
-      <h1><span class="blue">WATER IS LIFE</span> FOR CRAIGHOUSE</h1>
-      <img src="assets/icons/icon-placeholder.png" alt="Icon" class="icon">
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="project.html">Our Project</a>
-      <a href="donations.html">My Donation</a>
-    </nav>
-    <div class="logo-right">
-      <img src="assets/logos/craighouse-logo.png" alt="Craighouse Logo">
-    </div>
-  </header>
 
-  <main>
-    <section class="search-donation">
-      <input type="text" id="busqueda" placeholder="Search by name or course">
-      <button id="buscar-btn">🔍</button>
+  <!-- ✅ Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/icons/icon-placeholder.png" alt="Icon" width="30" height="30" class="d-inline-block align-text-top me-2">
+        <strong>WATER IS LIFE <span class="text-light">FOR CRAIGHOUSE</span></strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Our Project</a></li>
+          <li class="nav-item"><a class="nav-link active" href="donations.html">My Donation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Contenido principal -->
+  <main class="container my-5">
+
+    <!-- Buscador -->
+    <section class="mb-5 text-center">
+      <h2 class="mb-4">Find Your Donation</h2>
+      <div class="input-group mb-3 justify-content-center">
+        <input type="text" id="busqueda" class="form-control w-50" placeholder="Search by name or course">
+        <button id="buscar-btn" class="btn btn-primary">🔍 Search</button>
+      </div>
       <div id="resultados"></div>
     </section>
 
-    <section id="detalle-donacion" class="hidden">
-      <div class="donor-list">
-        <h3 id="nombre-curso">Y1-A</h3>
-        <ul>
-          <li>Martín Rojas</li>
-          <li>Matías Contreras</li>
-          <li>Alonso Tapia</li>
-          <li>Antonia Herrera</li>
-          <li>...</li>
-        </ul>
+    <!-- Detalle de donación -->
+    <section id="detalle-donacion" class="row hidden">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-header bg-info text-white">
+            <h5 class="card-title mb-0" id="nombre-curso">Y1-A</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-0">
+              <li>Martín Rojas</li>
+              <li>Matías Contreras</li>
+              <li>Alonso Tapia</li>
+              <li>Antonia Herrera</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="donation-detail">
-        <h3>Familia Diaz Gonzales</h3>
-        <p><em>Petorca - Chile</em></p>
-        <img src="assets/imgs/familia-diaz-placeholder.jpg" alt="Foto familia receptora">
-        <p>Queridos estudiantes y comunidad de Craighouse School:...</p>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-header bg-success text-white">
+            <h5 class="card-title mb-0">Familia Diaz Gonzales</h5>
+            <small><em>Petorca - Chile</em></small>
+          </div>
+          <div class="card-body">
+            <img src="assets/imgs/familia-diaz-placeholder.jpg" alt="Foto familia receptora" class="img-fluid mb-3">
+            <p>Queridos estudiantes y comunidad de Craighouse School:...</p>
+          </div>
+        </div>
       </div>
     </section>
+
   </main>
 
+  <!-- ✅ Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts/buscar.js"></script>
 </body>
 </html>
-/brbrbr

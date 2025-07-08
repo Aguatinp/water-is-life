@@ -4,33 +4,46 @@
   <meta charset="UTF-8">
   <title>Our Project - Water Is Life</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
-    <div class="logo-left">
-      <h1><span class="blue">WATER IS LIFE</span> FOR CRAIGHOUSE</h1>
-      <img src="assets/icons/icon-placeholderrrr.png" alt="Icon" class="icon">
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="project.html">Our Project</a>
-      <a href="donations.html">My Donation</a>
-    </nav>
-    <div class="logo-right">
-      <img src="assets/logos/craighouse-logo.png" alt="Craighouse Logo">
-    </div>
-  </header>
 
-  <main>
-    <section class="project">
+  <!-- ✅ Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/icons/icon-placeholderrrr.png" alt="Icon" width="30" height="30" class="d-inline-block align-text-top me-2">
+        <strong>WATER IS LIFE <span class="text-light">FOR CRAIGHOUSE</span></strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="project.html">Our Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="donations.html">My Donation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Contenido principal -->
+  <main class="container my-5">
+    <section class="project text-center">
       <h2>Water Is Life For Craighouse</h2>
       <p><strong>Craighouse School and Round Square: A Joint Project with WATERisLIFE</strong></p>
       <p>Craighouse School, together with the international network Round Square, is launching a meaningful project in collaboration with WATERisLIFE. The goal of this initiative is to help Chilean communities that do not have access to clean drinking water.</p>
       <p>As part of the project, each grade from <strong>First Grade (Primero Básico)</strong> to <strong>Twelfth Grade (Cuarto Medio)</strong> will participate by donating a Bucket Ultra Filter – a highly effective product developed by WATERisLIFE that provides safe and clean water. Every class, across all generations, will contribute to this cause, showing the power of unity and social responsibility within our school.</p>
       <p>This project is not only about giving, but also about learning and raising awareness. It reflects the values of Round Square and Craighouse: service, compassion, and global citizenship.</p>
       <p>Together, we can make a real difference for fellow Chileans in need.</p>
-      <img src="assets/imgs/drop-placeholder.jpg" alt="Drop of water image">
+      <img src="assets/imgs/drop-placeholder.jpg" alt="Drop of water image" class="img-fluid my-4">
     </section>
   </main>
+
+  <!-- ✅ Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
