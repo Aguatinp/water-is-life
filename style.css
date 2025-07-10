@@ -219,3 +219,25 @@ h4 {
   font-weight: 700;
   color: #004b73;
 }
+@media (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2, h3, h4 {
+    font-size: 20px;
+  }
+
+  .navbar-brand h5, .navbar-brand h6 {
+    font-size: 14px;
+    max-width: 140px;
+  }
+
+  footer img {
+    height: 60px;
+  }
+
+  .logos img {
+    height: 50px;
+  }
+}
