@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #cacaca;
+  background-color: #ffffff !important;
   color: #333;
 }
 
@@ -87,7 +87,7 @@ main {
 input#busqueda {
   padding: 8px;
   width: 250px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   margin-right: 5px;
 }
@@ -103,8 +103,9 @@ button#buscar-btn {
 
 button#buscar-btn:hover {
   background-color: #0077aa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
 }
-
 .hidden {
   display: none;
 }
