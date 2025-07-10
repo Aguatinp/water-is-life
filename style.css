@@ -1,4 +1,4 @@
-/* style.css actualizado para Bootstrap */
+/* === Estilo base === */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,6 +6,7 @@ body {
   color: #333;
 }
 
+/* === Encabezado === */
 .main-header {
   display: flex;
   align-items: center;
@@ -23,7 +24,7 @@ body {
 
 .logo-left h1 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 
 .logo-left .blue {
@@ -38,6 +39,7 @@ body {
   height: 30px;
 }
 
+/* === Navbar === */
 nav {
   display: flex;
   gap: 20px;
@@ -55,6 +57,7 @@ nav a:hover {
   background-color: #0077aa;
 }
 
+/* === Contenido principal === */
 main {
   padding: 20px;
 }
@@ -77,8 +80,10 @@ main {
 
 .logos img {
   height: 60px;
+  max-width: 100%;
 }
 
+/* === Buscador === */
 .search-donation {
   padding: 20px;
   text-align: center;
@@ -112,21 +117,24 @@ button#buscar-btn:hover {
 
 #buscar-btn img {
   height: 40px;
-  filter: invert(1); /* blanco si es ícono negro */
+  filter: invert(1);
 }
 
+/* === Contenido oculto === */
 .hidden {
   display: none;
 }
 
-.donor-list, .donation-detail {
+/* === Tarjetas y donaciones === */
+.donor-list,
+.donation-detail {
   padding: 20px;
   background: #f0f0f0;
   margin: 10px;
   border-radius: 10px;
 }
 
-/* === Estilos adicionales para integrarse bien con Bootstrap === */
+/* === Tarjetas estilo Bootstrap === */
 .card {
   border-radius: 10px;
   border: 1px solid #ddd;
@@ -156,30 +164,58 @@ button#buscar-btn:hover {
   max-width: 400px;
 }
 
-.text-muted, .text-danger, .text-warning {
+.text-muted,
+.text-danger,
+.text-warning {
   margin-top: 10px;
 }
 
-/* === Responsive: Ajustes para pantallas pequeñas === */
+/* === Footer al fondo del contenido === */
+footer {
+  background-color: #0e2e4d;
+  color: white;
+  width: 100%;
+  padding: 24px 16px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer img {
+  height: 45px;
+  margin: 0 10px;
+}
+
+/* === Responsive para móviles === */
 @media (max-width: 576px) {
   .input-group > .form-control {
     width: 100% !important;
   }
+
   .search-donation {
     padding: 10px;
   }
+
+  .logos {
+    gap: 10px;
+  }
+
+  .logos img,
+  footer img {
+    height: 38px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
-/* === Títulos globales con diseño elegante === */
-h1, h2, h3, h4 {
+/* === Títulos globales === */
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: #004b73;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
 }

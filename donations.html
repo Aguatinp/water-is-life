@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>My Donation - Water Is Life</title>
   <link rel="stylesheet" href="style.css">
@@ -42,10 +43,9 @@
       <div class="input-group mb-3 justify-content-center">
         <input type="text" id="busqueda" class="form-control w-50" placeholder="Search by name or course">
         <button id="buscar-btn" class="btn btn-primary d-flex align-items-center gap-2">
-  <img src="fotos/lupa-removebg-preview.png" alt="Buscar">
-  Search
-</button>
-
+          <img src="fotos/lupa-removebg-preview.png" alt="Buscar">
+          Search
+        </button>
       </div>
       <div id="resultados"></div>
     </section>
@@ -83,20 +83,22 @@
       </div>
     </section>
 
-</main>
+  </main>
 
-<div id="footer-placeholder"></div>
+  <!-- ✅ Footer -->
+  <div id="footer-placeholder"></div>
 
-<!-- ✅ Bootstrap y Script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="scripts/buscar.js"></script>
+  <!-- ✅ Bootstrap y Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/buscar.js"></script>
 
-<script>
-  fetch("components/footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
-</script>
+  <script>
+    fetch("components/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
 </body>
 </html>
