@@ -111,7 +111,7 @@ button#buscar-btn:hover {
 }
 
 #buscar-btn img {
-  height: 20px;
+  height: 40px;
   filter: invert(1); /* blanco si es ícono negro */
 }
 
